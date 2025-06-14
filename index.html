@@ -103,6 +103,12 @@
       font-size: 0.9rem;
       color: #666;
     }
+
+    /* Smaller music player wrapper to center and constrain width */
+    .music-player {
+      max-width: 300px;
+      margin: 2rem auto;
+    }
   </style>
 </head>
 <body>
@@ -133,7 +139,16 @@
   </div>
 
   <section class="music-player">
-    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/3uXFLBjPAFL3bzeuqMgOqO?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    <iframe
+      src="https://open.spotify.com/embed/artist/3uXFLBjPAFL3bzeuqMgOqO"
+      width="300"
+      height="80"
+      frameborder="0"
+      allowtransparency="true"
+      allow="encrypted-media"
+      loading="lazy"
+      style="border-radius:12px;">
+    </iframe>
   </section>
 
   <section class="contact">
@@ -149,8 +164,5 @@
   <footer>
     &copy; 2025 Lay Waste. All rights reserved.
   </footer>
-</body>
-</html>
-
 </body>
 </html>
